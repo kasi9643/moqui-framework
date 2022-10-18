@@ -20,8 +20,6 @@ jobs:
     - name: List files in the repository
       run: sudo java -version   
     - name: List files in the repository
-      run: ./gradlew getRuntime
-    - name: List files in the repository
       run: ./gradle addRuntime
     - name: build artifacts
       run: cd docker/simple
