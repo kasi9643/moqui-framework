@@ -21,7 +21,7 @@ jobs:
     - name: list of files 
       run: ls -la
     - name: change directory
-      run: cd moqui
+      run: cd /moqui
     - name: list of files
       run: ls -la
     - name: List files in the repository
