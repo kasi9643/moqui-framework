@@ -16,4 +16,10 @@ jobs:
     
     - name: list of files
       run: ls -la
+    - name: clone repository
+      run: git clone git@github.com:kasi9643/moqui-framework.git
+    - name: list of files 
+      run: ls -la
+      
+      
       
