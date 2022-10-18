@@ -28,6 +28,11 @@ jobs:
       run: sudo  apt-get install openjdk-11-jdk
     - name: List files in the repository
       run: sudo java -version   
-      
+    - name: List files in the repository
+      run: ./gradlew getRuntime
+    - name: build artifacts
+      run: cd docker/simple
+    - name: image build
+      run: ./docker-build.sh
       
       
