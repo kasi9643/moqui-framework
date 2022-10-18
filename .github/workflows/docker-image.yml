@@ -17,12 +17,8 @@ jobs:
     - name: list of files
       run: ls -la
     - name: clone repository
-      run: git clone https://github.com/moqui/moqui-framework.git moqui
+      run: git clone https://github.com/moqui/moqui-framework.git moqui cd moqui
     - name: list of files 
-      run: ls -la
-    - name: change directory
-      run: cd moqui/
-    - name: list of files
       run: ls -la
     - name: List files in the repository
       run: sudo  apt-get install openjdk-11-jdk
