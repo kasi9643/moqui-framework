@@ -17,11 +17,11 @@ jobs:
     - name: list of files
       run: ls -la
     - name: clone repository
-      run: git clone https://github.com/moqui/moqui-framework.git
+      run: git clone https://github.com/moqui/moqui-framework.git moqui
     - name: list of files 
       run: ls -la
     - name: change directory
-      run: cd moqui-framework
+      run: cd moqui
     - name: list of files
       run: ls -la
       
