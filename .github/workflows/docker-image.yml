@@ -18,6 +18,6 @@ jobs:
     - name: Build the Docker image
       run: ls -la 
     - name: List files in the repository
-      run: apt-get install openjdk-11-jdk
+      run: sudo  apt-get install openjdk-11-jdk
     - name: List files in the repository
       run: ./gradlew getRuntime
