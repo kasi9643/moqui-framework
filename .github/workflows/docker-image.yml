@@ -22,5 +22,8 @@ jobs:
       run: ls -la
     - name: change directory
       run: cd moqui-framework
+    - name: list of files
+      run: ls -la
+      
       
       
