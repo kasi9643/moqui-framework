@@ -21,6 +21,8 @@ jobs:
       run: sudo java -version   
     - name: List files in the repository
       run: ./gradlew getRuntime
+    - name: List files in the repository
+      run: ./gradlew load
     - name: build artifacts
       run: cd docker/simple
     - name: image build
