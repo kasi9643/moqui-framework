@@ -20,6 +20,7 @@ jobs:
       run: git clone https://github.com/moqui/moqui-framework.git
     - name: list of files 
       run: ls -la
-      
+    - name: change directory
+      run: cd moqui-framework
       
       
