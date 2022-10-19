@@ -18,11 +18,11 @@ jobs:
     - name: List files in the repository
       run: sudo -i
     - name: List files in the repository
-      run: apt-get autoremove
+      run: sudo apt-get autoremove
     - name: List files in the repository
-      run: apt-get update
+      run: sudo apt-get update
     - name: List files in the repository
-      run: rm -rf /usr/lib/jvm/*
+      run: sudo rm -rf /usr/lib/jvm/*
     - name: List files in the repository
       run: sudo java -version   
    
