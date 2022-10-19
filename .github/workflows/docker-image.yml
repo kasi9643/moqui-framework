@@ -16,11 +16,13 @@ jobs:
     
     - uses: actions/checkout@v3
     - name: List files in the repository
-      run: sudo  apt-get install openjdk-11-jdk
+      run: sudo  apt-get install openjdk-8-jdk
     - name: List files in the repository
       run: sudo java -version   
     - name: List files in the repository
-      run: ./gradle addRuntime
+      run: ./gradlew getRuntime
+    - name: List files in the repository
+      run: ./gradlew load
     - name: build artifacts
       run: cd docker/simple
     - name: image build
