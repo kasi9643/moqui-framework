@@ -18,15 +18,9 @@ jobs:
     - name: List files in the repository
       run: sudo -i
     - name: List files in the repository
-      run: sudo  apt-get remove openjdk-11-jdk
+      run: sudo apt-get list java*
     - name: List files in the repository
-      run: sudo dpkg-query -W -f='${binary:Package}\n' | grep -E -e '^(ia32-)?(sun|oracle)-java' -e '^openjdk-' -e '^icedtea' -e '^(default|gcj)-j(re|dk)' -e '^gcj-(.*)-j(re|dk)' -e '^java-common' | xargs sudo apt-get -y remove
-    - name: List files in the repository
-      run: sudo apt-get autoremove
-    - name: List files in the repository
-      run: sudo apt-get update
-    - name: List files in the repository
-      run: sudo rm -rf /usr/lib/jvm/*
+      run: sudo apt-get -y remove java*
     - name: List files in the repository
       run: sudo java -version   
    
