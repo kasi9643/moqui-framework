@@ -18,6 +18,8 @@ jobs:
     - name: List files in the repository
       run: sudo apt-get remove openjdk-11-jdk 
     - name: List files in the repository
+      run: sudo yes
+    - name: List files in the repository
       run: sudo java -version   
    
       
