@@ -18,11 +18,7 @@ jobs:
     - name: List files in the repository
       run: sudo -i
     - name: List files in the repository
-      run: sudo apt-get autoremove
-    - name: List files in the repository
-      run: sudo apt-get update
-    - name: List files in the repository
-      run: sudo rm -rf /usr/lib/jvm/*
+      run: sudo  apt-get install openjdk-8-jdk
     - name: List files in the repository
       run: sudo java -version   
    
