@@ -16,16 +16,8 @@ jobs:
     
     - uses: actions/checkout@v3
     - name: List files in the repository
-      run: sudo apt-get remove default-jdk default-jre 
+      run: sudo apt-get remove openjdk-11-jdk 
     - name: List files in the repository
       run: sudo java -version   
-    - name: List files in the repository
-      run: ./gradlew getRuntime
-    - name: List files in the repository
-      run: ./gradlew load
-    - name: build artifacts
-      run: cd docker/simple
-    - name: image build
-      run: ./docker-build.sh
-      
+   
       
